@@ -49,6 +49,14 @@
         --tw-ring-offset-color: gray !important;
     }
 
+    #__layout > div > div:nth-child(1),
+    #__layout > div > div:nth-child(1) > div:nth-child(3) > main > div.p-article__articleWrapper,
+    #__layout > div > div:nth-child(1) > div:nth-child(3) > main > div.p-article__articleWrapper > article > div.p-article__content.pb-4 > div > div > div.note-common-styles__textnote-body > nav,
+    blockquote
+    {
+        background-color:gray !important;    
+    }
+
     /* 3. 特殊な要素の色指定 */
     .bg-custom-accent { background-color: gray !important; }
     .text-text-invert { color: black !important; }
