@@ -1,0 +1,84 @@
+/* ==UserStyle==
+@name           note.com ZEN MODE
+@namespace      github.com/abyss-SeaSerpent/SilentNoteCss
+@version        1.0.0
+@description    Note.com ZEN MODE: Focus on your words. Hides all social numbers and applies a minimalist gray theme.
+@author         SeaSerpent
+@category       site-customization
+@license        unlicense
+==/UserStyle== */
+
+@-moz-document domain("note.com") {
+    /* 1. 数字・要素の非表示（スキ数、フォロワー、通知、特定のセクション） */
+    .mr-1.font-bold.text-base.text-text-primary.leading-normal,
+    .text-text-secondary.text-xs.leading-normal,
+    header.mb-4.flex.items-center.gap-2,
+    .ml-2.text-sm.text-text-secondary,
+    .o-noteLikeV3__count.o-noteLikeV3__count--mediumSmall.text-text-secondary,
+    .o-noteLikeV3__count.o-noteLikeV3__count--medium.text-text-secondary,
+    .o-smallNoteSummary__likeCount.text-text-secondary,
+    .pl-2.text-sm.text-text-secondary,
+    .m-navbarNotifButton.svelte-181qbyy,
+    .o-navbarPrimary__badge.svelte-1javztp,
+    .flex.h-6.w-6.items-center.justify-center.border-0.bg-transparent.text-text-clickable-icon,
+    .absolute.rounded.bg-surface-badge.px-1,
+    .o-statsContent__tableStat.o-statsContent__tableStat--type_suki,
+    .o-statsContent__overviewItem.o-statsContent__overviewItem--type_suki,
+    span.relative.inline-flex,
+    div.t-timeline-new,
+    div.m-largeNoteWrapper__card,
+    div.pointer-events-none.relative.mt-3 > div > div.pointer-events-auto.flex.w-full > a > div,
+    #__layout > div > div:nth-child(1) > main > div > div.t-settings__aside {
+        display: none !important;
+    }
+
+    /* 2. 背景と色のグレー調整 */
+    #main-content, 
+    .bg-background-primary, 
+    .bg-surface-normal, 
+    footer,
+    #__next,
+    main textarea,
+    header,
+    #__next > div.\|.isolate > div > div,
+    #__layout > div > div:nth-child(1) > main,
+    div.t-settings__main > div,
+    button,
+    [id^=":r"] > span.absolute.inset-0.block.overflow-hidden.duration-200.transition-transform {
+        background-color: gray !important;
+        --tw-ring-offset-color: gray !important;
+    }
+
+    /* 3. 特殊な要素の色指定 */
+    .bg-custom-accent { background-color: gray !important; }
+    .text-text-invert { color: black !important; }
+    #__layout > div { background-color: black !important; }
+
+    /* 4. 変数の上書き（ボーダーやプレースホルダー） */
+    :root {
+        --color-border-primary: gray !important;
+        --color-border-default: gray !important;
+        --color-border-normal: gray !important;
+        --color-border-weak: gray !important;
+        --color-border-strong: gray !important;
+        --color-border-invert: gray !important;
+        --tw-ring-color: gray !important;
+        --color-background-primary: #f5f8fa !important;
+        --color-surface-normal: gray !important;
+        --color-text-placeholder: black !important;
+    }
+
+    * { border-color: gray !important; }
+
+    /* 5. プレースホルダー文字色 */
+    input::placeholder, 
+    textarea::placeholder {
+        color: black !important;
+        opacity: 1;
+    }
+
+    /* デスクトップ表示のサイドバー調整 */
+    #main-content > div.lg\:mx-8.lg\:mt-8.lg\:mb-0.lg\:grid.lg\:grid-cols-\[384px_minmax\(auto\,var\(--size-content\)\)\].lg\:items-start.lg\:justify-center.lg\:gap-x-8 > div > div.mb-4.flex.flex-col.gap-8 > section.mt-4.px-4.lg\:px-0 > div.hidden.lg\:block > div.grid.grid-cols-1.lg\:grid-cols-3.lg\:gap-6 > div > div.hidden.w-full.md\:contents.\[\&\>\*\]\:w-full > div > div {
+        background-color: gray !important;
+    }
+}
