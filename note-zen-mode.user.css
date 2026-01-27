@@ -62,6 +62,12 @@
     .text-text-invert { color: black !important; }
     #__layout > div { background-color: black !important; }
 
+    /* 投稿画面のタグ入力部分 */
+    #__next > div.\|.isolate > div.relative.min-h-screen > div.md\:flex > main > section:nth-child(1) > div.mt-0.box-border.h-full.whitespace-pre-wrap.pt-4 > div.sc-fedf0365-0.iTmFEB > div.sc-fedf0365-1.inwXgW{
+        background-color: #bbb !important;
+    }
+
+
     /* 4. 変数の上書き（ボーダーやプレースホルダー） */
     :root {
         --color-border-primary: gray !important;
@@ -89,4 +95,5 @@
     #main-content > div.lg\:mx-8.lg\:mt-8.lg\:mb-0.lg\:grid.lg\:grid-cols-\[384px_minmax\(auto\,var\(--size-content\)\)\].lg\:items-start.lg\:justify-center.lg\:gap-x-8 > div > div.mb-4.flex.flex-col.gap-8 > section.mt-4.px-4.lg\:px-0 > div.hidden.lg\:block > div.grid.grid-cols-1.lg\:grid-cols-3.lg\:gap-6 > div > div.hidden.w-full.md\:contents.\[\&\>\*\]\:w-full > div > div {
         background-color: gray !important;
     }
+
 }
