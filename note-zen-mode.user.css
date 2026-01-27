@@ -67,6 +67,13 @@
         background-color: #bbb !important;
     }
 
+    /*Note記事埋め込み*/
+    .p-noteEmbed{
+        background-color: #bbb !important;
+    }
+
+
+
 
     /* 4. 変数の上書き（ボーダーやプレースホルダー） */
     :root {
@@ -97,3 +104,4 @@
     }
 
 }
+
