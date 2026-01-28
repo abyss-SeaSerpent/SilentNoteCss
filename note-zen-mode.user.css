@@ -43,7 +43,6 @@
     #__next > div.\|.isolate > div > div,
     #__layout > div > div:nth-child(1) > main,
     div.t-settings__main > div,
-    button,
     [id^=":r"] > span.absolute.inset-0.block.overflow-hidden.duration-200.transition-transform {
         background-color: gray !important;
         --tw-ring-offset-color: gray !important;
@@ -51,8 +50,7 @@
 
     #__layout > div > div:nth-child(1),
     #__layout > div > div:nth-child(1) > div:nth-child(3) > main > div.p-article__articleWrapper,
-    #__layout > div > div:nth-child(1) > div:nth-child(3) > main > div.p-article__articleWrapper > article > div.p-article__content.pb-4 > div > div > div.note-common-styles__textnote-body > nav,
-    blockquote
+    #__layout > div > div:nth-child(1) > div:nth-child(3) > main > div.p-article__articleWrapper > article > div.p-article__content.pb-4 > div > div > div.note-common-styles__textnote-body > nav
     {
         background-color:gray !important;    
     }
@@ -67,12 +65,13 @@
         background-color: #bbb !important;
     }
 
-    /*Note記事埋め込み*/
-    .p-noteEmbed{
+    /* Note記事埋め込み,投稿画面のタグ入力部分,引用 */
+    blockquote,
+    [class*="sc-fedf0365"],
+    .bg-\[\#EAEFF2\],
+    .p-noteEmbed {
         background-color: #bbb !important;
     }
-
-
 
 
     /* 4. 変数の上書き（ボーダーやプレースホルダー） */
@@ -104,4 +103,5 @@
     }
 
 }
+
 
